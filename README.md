@@ -19,7 +19,11 @@ platform benchmark, or comparative performance advantage.
 ## Locked versions and models
 
 - TypeScript: `@runware/sdk`, version pinned in `package.json`.
-- Image: `runware:100@1`.
+- Image, live on stage: `runware:100@1` (FLUX.1 Schnell).
+- Image, measured only (not run live): `runware:101@1` (FLUX.1 Dev),
+  used once to get a real `acceleratorOptions` delta. Schnell's four steps
+  don't leave the cache room to do anything measurable; Dev's do. See
+  `performance-load-testing/accelerator-probe.sh`.
 
 Resolve the live schema again before recording: `./verify-live-contract.sh`.
 
@@ -64,8 +68,9 @@ the same code shown on screen during the talk, not a stand-in command.
 - `check-deps.sh`: confirms required tools and an available API key before
   anything else runs.
 - [`performance-load-testing/`](performance-load-testing/README.md):
-  the concurrent-load probe used as the cold open, plus supplementary
-  measurement scripts and their methodology.
+  the concurrent-load probe used as the cold open, the `acceleratorOptions`
+  comparison behind the Slide 4 claim, plus supplementary measurement
+  scripts and their methodology.
 
 ## Safety boundaries
 
