@@ -1,0 +1,17 @@
+{
+  "name": "runware-task-lifecycle-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "typescript:run": "tsx typescript-lifecycle.ts"
+  },
+  "dependencies": {
+    "@runware/sdk": "1.6.8"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.3",
+    "tsx": "4.23.1",
+    "typescript": "5.9.3"
+  }
+}
