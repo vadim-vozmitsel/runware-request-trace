@@ -1,0 +1,2 @@
+model,run,http_code,dns_s,connect_s,tls_s,ttfb_s,total_s,cost_usd
+runware:100@1,1,200,0.041260,0.048007,0.077900,2.736899,2.737591,0.0006
